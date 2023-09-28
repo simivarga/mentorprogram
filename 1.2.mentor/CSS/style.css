@@ -1,0 +1,46 @@
+.main {
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    left: 35%;
+    background-color:#006633 ;
+    height:333px;
+    width:416px;
+    border-radius: 16px 0 0 16px;
+}
+div .header {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+}
+input[type=text]{
+    background-color: white;
+    align-items: center;
+    height: 23px;
+    width: 300px;
+    padding: 2px 10px;
+    border-style: none;
+    border-radius: 16px;
+}
+input[type=email]{
+    background-color: white;
+    height: 23px;
+    width: 300px;
+    margin:20px;
+    padding: 2px 10px;
+    border-style: none;
+    border-radius: 16px;
+}
+div .name {
+    margin: 5px 0 5px 20px;
+    height:20px;
+    border-radius: 16px;
+}
+div .checkbox {
+    color: white;
+    
+}
+input[type=checkbox]{
+    background-color: transparent;
+}
