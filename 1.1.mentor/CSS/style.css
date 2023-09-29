@@ -7,11 +7,14 @@ body {
 	text-align: center;
 }
 .main {
-	display:flex;
+	position: absolute;
 	align-items:center;
 	justify-content:space-around;
 	width: 200px;
-	height: 130px;
+	height: 240px;
+	top: 50%;
+    left:50%;
+    transform: translate(-50%, -50% );
 	border-radius: 20px;
 	flex-direction: column;
 	}
@@ -37,9 +40,8 @@ body {
 	text-align: center;
 	font-weight: bold;
 	border: none;
-	
 	border-radius: 20px;
-	width: 127px;
+	width: 130px;
 	height:32px;
 	margin: 5px 0;
 }
@@ -59,10 +61,12 @@ body {
 	margin: 0 0 0px 0;
 	width: 20px;
 	height: 20px;
-	background-image: url('kep.png');
 	position: relative;
 	left: 0%;
 	right: 20%;
 	top: 0;
 	bottom: 0%;
+}
+.fa-solid fa-trash {
+	padding: 50px;
 }
