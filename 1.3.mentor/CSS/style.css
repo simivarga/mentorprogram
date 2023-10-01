@@ -25,9 +25,10 @@ div .workspace {
     left:50%;
     transform: translate(-50%, -50% );
     display: inline-block;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 .flex {
+
     display: flex;
     position: absolute;
     background-color:white;
@@ -78,12 +79,12 @@ div .gomb3{
     border: 6px dashed #B1DDC4;
 }
 .asd {
-    color: black;
+    color: #006633;
     position: relative;
+    font-size: 18px;
+    font-weight: 700px;
     top: 19%;
     left: 5%;
-    font-weight: normal;
-    font-size: 10px;
 }
 .name {
     color: white;
@@ -105,3 +106,132 @@ input[type=text]{
     border-radius: 20px;
     transition: all 0.3s ease; 
 }
+.destination-text {
+    color: #006633;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700px;
+    top: 25%;
+    left: 5%;
+}
+input[type=text2]{
+    position: absolute;
+    display: inline-block;
+    margin:0;
+    background-color: white;
+    cursor:pointer;
+    top: 57%;
+    height: 20px;
+    width: 543px;
+    padding:10px 12px 10px 12px;
+    border: 1px solid #006633;
+    border-radius: 20px;
+    transition: all 0.3s ease; 
+}
+.size-text {
+    color: #006633;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700px;
+    top: 40%;
+    left: 5%;
+}
+
+
+
+
+
+.gomb4 {
+    display: inline-block;
+    position: absolute;
+    bottom:0%;
+    left:0%;
+    background: #006633;
+    color: white;
+    width: 112px;
+    height: 25px;
+    padding-top:7px;
+    text-align: center;
+    border-radius: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.gomb5 {
+    display: inline-block;
+    position: absolute;
+    bottom:0%;
+    right:0%;
+    background: #DADADA;
+    color: #363636;
+    width: 112px;
+    height: 25px;
+    padding-top:7px;
+    text-align: center;
+    border-radius: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.radio-buttons {
+    position: absolute;
+    top:75%;
+    left: 5%;
+}
+.container {
+    display: block;
+    position: relative;
+    color:black;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #8b8a8a;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background: #006633;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+        top: 3px;
+      left: 3px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #white;
+  }
