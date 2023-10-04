@@ -96,7 +96,7 @@ body {
     font-size: 14px;
     bottom:0%;
     left:5%;
-    color: black;
+    color: rgba(0, 0, 0, 0.884);
 }
 .triangle {
     position: absolute;
@@ -121,6 +121,7 @@ body {
 
 }
 .gomb {
+
     position: absolute;
     bottom:0;
     width:172px;
