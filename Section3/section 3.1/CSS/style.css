@@ -1,0 +1,40 @@
+
+header {
+    position: absolute;
+    left: 0%;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 25px;
+    position: absolute;
+    width: 99%;
+    height:58px;
+    background-image: url('header.svg') ; 
+    text-decoration: none;
+}
+li,a {
+    color: white;
+    text-decoration: none;
+}
+.logo,.menu {
+    cursor: pointer;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.search {
+    position: relative;
+    right:50px;
+    
+}
+input[type=text]{
+    border-radius: 10px;
+    width:306px;
+    height:40px;
+    padding:0 30px;
+}
