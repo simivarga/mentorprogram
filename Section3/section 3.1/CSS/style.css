@@ -18,7 +18,15 @@ header {
     background-image: url('header.svg') ; 
     text-decoration: none;
 }
-
+.content {
+	display: flex;
+    position: absolute;
+    top:15%;
+    gap:16px;
+	flex-wrap: nowrap;
+	min-height: 2200px;
+	align-items: stretch;
+}
 
 .logos {
     width: 260px;
@@ -52,15 +60,7 @@ input[type=text]{
     height:40px;
     padding:0 30px;
 }
-.content {
-	display: flex;
-    position: absolute;
-    top:15%;
-    gap:16px;
-	flex-wrap: nowrap;
-	min-height: 500px;
-	align-items: stretch;
-}
+
 main {
 	flex-basis: 70vw;
 	order: 1;

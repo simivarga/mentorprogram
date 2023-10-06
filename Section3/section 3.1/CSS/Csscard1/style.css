@@ -1,0 +1,40 @@
+
+.photo1 {
+    position: relative;
+    background-image: url('nigga.svg');
+    width: 856px;
+    height:480px;
+    
+}
+.box {
+    position: absolute;
+    background-color:#55AE3A ;
+    width: 162px;
+    height:32px;
+    transform: skew(-30deg);
+    text-align: center;
+    margin: 0;
+    top:60%;
+    left: 4%;
+}
+.box p {
+    display: block;
+    position: relative;
+    
+    color: white;
+    transform: skew(30deg);
+   top:25%;
+    margin: 0%;
+}
+
+.photo1 h2 {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    padding:20px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+}
