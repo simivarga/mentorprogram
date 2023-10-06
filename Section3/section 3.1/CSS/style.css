@@ -1,8 +1,13 @@
+* {
+	box-sizing: border-box;
+    
+}
 
 header {
     position: absolute;
     left: 0%;
     display: flex;
+    gap:16px;
     font-size: 20px;
     justify-content: space-between;
     align-items: center;
@@ -13,9 +18,18 @@ header {
     background-image: url('header.svg') ; 
     text-decoration: none;
 }
+
+
+.logos {
+    width: 260px;
+}
 li,a {
     color: white;
     text-decoration: none;
+}
+.logo {
+    position: relative;
+    float:right;
 }
 .logo,.menu {
     cursor: pointer;
@@ -37,4 +51,44 @@ input[type=text]{
     width:306px;
     height:40px;
     padding:0 30px;
+}
+.content {
+	display: flex;
+    position: absolute;
+    top:15%;
+    gap:16px;
+	flex-wrap: nowrap;
+	min-height: 500px;
+	align-items: stretch;
+}
+main {
+	flex-basis: 70vw;
+	order: 1;
+	margin: 0 20px;
+    width: 856px;
+    height:480px;
+}
+aside {
+	flex-basis: 25vw;
+	order: 2
+}
+aside ul {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+aside a {
+	display: block;
+	color: #006633;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 15px;
+    font-weight: bold;
+    
+}
+aside a:hover {
+	text-decoration: underline
+}
+aside li {
+	padding: 15px 0;
 }
