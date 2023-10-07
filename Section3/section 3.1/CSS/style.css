@@ -61,12 +61,63 @@ input[type=text]{
     padding:0 30px;
 }
 
+
+
+
+
+
+
 main {
 	flex-basis: 70vw;
 	order: 1;
-	margin: 0 20px;
+	margin: 0;
     width: 856px;
     height:480px;
+    
+}
+.photo1 {
+    display: inline-block;
+    position: relative;
+    background-image: url('nigga.svg');
+    width: 856px;
+    height:480px;
+    margin: 0%;
+    
+}
+.box {
+    position: absolute;
+    background-color:#55AE3A ;
+    width: 162px;
+    height:32px;
+    transform: skew(-30deg);
+    text-align: center;
+    margin: 0;
+    top:60%;
+    left: 4%;
+    
+}
+.box p {
+    display: block;
+    position: relative;
+    
+    color: white;
+    transform: skew(30deg);
+   top:25%;
+    margin: 0%;
+    
+}
+
+.photo1 h2 {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    padding:20px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    
 }
 aside {
 	flex-basis: 25vw;
@@ -91,4 +142,58 @@ aside a:hover {
 }
 aside li {
 	padding: 15px 0;
+}
+.rec {
+    margin-top: 30px;
+    
+}
+.card4 {
+    display: inline-block;
+    margin-top:25px;
+    width:416px;
+    height:86px;
+    
+}
+.photocard4 {
+    float: left;
+    gap:30px;
+    display: inline-block;
+    margin: 0%;
+    position: relative;
+    background-image: url('k.svg');
+    width: 86px;
+    height:86px;
+    
+}
+.boxcard4 {
+    display: inline-block;
+    position: relative;
+    background-color:#55AE3A ;
+    width: 162px;
+    height:32px;
+    transform: skew(-30deg);
+    text-align: center;
+    margin: 0;
+    top:0%;
+    left:7%;
+}
+.boxcard4 p {
+    display: block;
+    position: relative;
+    color: white;
+    transform: skew(30deg);
+    top:25%;
+    margin: 0%;
+}
+h4 {
+    margin: 5px 0 0 20px;
+    float: center;
+    width: 306px;
+    height:51px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }

@@ -1,0 +1,44 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@700&display=swap');
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+.main {
+    display: inline-block;
+    margin:0%;
+    width:196px;
+    height:196px;
+}
+.photo1 {
+    gap:30px;
+    display: inline-block;
+    margin: 0%;
+    position: absolute;
+    background-image: url('klm.svg');
+    width: 196px;
+    height: 196px;   
+    
+
+}
+.box {
+    position: relative;
+    left: 0%;
+    top:50%;
+    padding:12px;
+    width: 172px;
+    height:74px;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(360deg, #363636 2.46%, rgba(54, 54, 54, 0.769065) 38.05%, rgba(54, 54, 54, 0) 100%);
+}
+h4 {
+display: inline-block;
+margin-top: 5px;
+font-size: 18px;
+font-weight: 800;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
