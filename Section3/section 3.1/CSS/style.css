@@ -1,7 +1,8 @@
 * {
-	box-sizing: border-box;
-    
+
+    align-items: center;
 }
+
 
 header {
     position: absolute;
@@ -13,7 +14,7 @@ header {
     align-items: center;
     padding:0 25px;
     position: absolute;
-    width: 99%;
+    width: 100%;
     height:58px;
     background-image: url('header.svg') ; 
     text-decoration: none;
@@ -24,8 +25,12 @@ header {
     top:15%;
     gap:16px;
 	flex-wrap: nowrap;
+    max-width: 90%;
+    column-gap: 50px;
 	min-height: 2200px;
-	align-items: stretch;
+	justify-content: space-evenly;
+    align-items: stretch;
+
 }
 
 .logos {
@@ -79,7 +84,8 @@ main {
     display: inline-block;
     position: relative;
     background-image: url('nigga.svg');
-    width: 856px;
+    width: 100%;
+    max-width: 856px;
     height:480px;
     margin: 0%;
     
@@ -102,7 +108,7 @@ main {
     
     color: white;
     transform: skew(30deg);
-   top:25%;
+     top:25%;
     margin: 0%;
     
 }
@@ -118,6 +124,86 @@ main {
     font-size: 32px;
     line-height: 40px;
     
+}
+.card2 {
+    display: inline-block;
+    position: relative;
+    background-image: url('nigga2.svg');
+    max-width: 416px;
+    width:416px;
+    height:233px;
+}
+.box1 {
+    position: absolute;
+    background-color:#55AE3A ;
+    width: 162px;
+    height:32px;
+    transform: skew(-30deg);
+    text-align: center;
+    margin: 0;
+    top:50%;
+    left: 6%;
+}
+.box1 p {
+    display: block;
+    position: relative;
+    color: white;
+    transform: skew(30deg);
+    top:25%;
+    margin: 0%;
+}
+
+.card2 h2 {
+    margin: 0 auto;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    padding:14px;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 32px;
+}
+.card3 {
+    margin-top: 3%;
+    margin-left: 2%;
+    display: inline-block;
+    position: relative;
+    background-image: url('nigga3.svg');
+    max-width: 416px;
+    width:416px;
+    height:233px;
+    
+
+}
+.box1 {
+    position: absolute;
+    background-color:#55AE3A ;
+    width: 162px;
+    height:32px;
+    transform: skew(-30deg);
+    text-align: center;
+    margin: 0;
+    top:50%;
+    left: 6%;
+}
+.box2 p {
+    display: block;
+    position: relative;
+    color: white;
+    transform: skew(30deg);
+    top:25%;
+    margin: 0%;
+}
+
+.card3 h3 {
+    margin: 0 auto;
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
 }
 aside {
 	flex-basis: 25vw;
@@ -150,7 +236,8 @@ aside li {
 .card4 {
     display: inline-block;
     margin-top:25px;
-    width:416px;
+    width: 100%;
+    max-width: 416px;
     height:86px;
     
 }
@@ -161,7 +248,8 @@ aside li {
     margin: 0%;
     position: relative;
     background-image: url('k.svg');
-    width: 86px;
+    width: 100%;
+    max-width: 86px;
     height:86px;
     
 }
@@ -169,7 +257,8 @@ aside li {
     display: inline-block;
     position: relative;
     background-color:#55AE3A ;
-    width: 162px;
+    width: 100%;
+    max-width: 162px;
     height:32px;
     transform: skew(-30deg);
     text-align: center;
@@ -188,7 +277,8 @@ aside li {
 h4 {
     margin: 5px 0 0 20px;
     float: center;
-    width: 306px;
+    width: 100%;
+    max-width: 306px;
     height:51px;
     display: inline-block;
     font-size: 18px;
@@ -196,4 +286,38 @@ h4 {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+}
+@media (max-width:1065px){
+    .photo1 h2 {
+      
+        font-size: 28px;
+        line-height: 34px;
+        
+    }
+   
+}
+@media (max-width:775px){
+   .photo1{
+    height: 100%;
+    max-height: 390px;
+   }
+    .photo1 h2 {
+      
+        font-size: 24px;
+        line-height: 32px;
+        
+    }
+   .aside {
+    display:none;
+   }
+  
+}
+@media (max-width: 675px){
+    .photo1 h2 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+   .aside {
+    display:none;
+   }
 }
