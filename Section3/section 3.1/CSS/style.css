@@ -1,35 +1,33 @@
 * {
-
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
 }
 header {
     position: absolute;
-    left: 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58px;
+    background-image: url('header.svg');
+    background-size: cover;
     display: flex;
-    font-size: 20px;
     justify-content: space-between;
     align-items: center;
-    padding:0 25px;
-    width: 100%;
-    height:58px;
-    background-image: url('header.svg') ; 
-    text-decoration: none;
+    padding: 0 25px;
 }
 .content {
-	display: flex;
-    position: absolute;
-    top:15%;
-	flex-wrap: nowrap;
-    max-width: 100%;
-    column-gap: 50px;
-	min-height: 2200px;
-	justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: stretch;
-
+    max-width: 100%;
+    min-height: 2200px;
+    margin-top: 58px;
+    padding: 20px;
 }
 
 .logos {
@@ -50,23 +48,19 @@ li,a {
     list-style: none;
     display: flex;
     gap: 20px;
-  
 }
 .nav_links li {
     display: inline-block;
-    padding-right: 20px;
 }
 .search {
     position: relative;
-    right:25px;
 }
 input[type=text]{
-    right:0;
     border-radius: 15px;
     max-width: 240px;
     width: 100%;
-    height:35px;
-    padding:0 30px;
+    height: 35px;
+    padding: 0 30px;
 }
 
 
@@ -76,21 +70,21 @@ input[type=text]{
 
 
 main {
-	flex-basis: 70vw;
-	order: 1;
-	margin: 0;
-    width: 856px;
-    height:480px;
-    
+    flex-basis: 70vw;
+    order: 1;
+    margin: 0;
+    width: 100%;
+    max-width: 856px;
+    height: 480px;
 }
 .photo1 {
-    display: inline-block;
-    position: relative;
     background-image: url('nigga.svg');
+    background-size: cover;
     width: 100%;
     max-width: 950px;
     height: 480px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    position: relative;
 }
 .box {
     display: none;
@@ -441,10 +435,24 @@ nav{
     display:none;
    }
 }
-@media (max-width: 580px){
-   header{
-    background-image: url('header-background-phone.png') ; 
-    height: auto;
-    width: 100%;
-   }
+@media (max-width: 580px) {
+    header {
+        background-image: url('header-background-phone.png');
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .photo1 h2 {
+        font-size: 24px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
 }
