@@ -10,12 +10,10 @@ header {
     position: absolute;
     left: 0%;
     display: flex;
-    gap:16px;
     font-size: 20px;
     justify-content: space-between;
     align-items: center;
     padding:0 25px;
-    position: absolute;
     width: 100%;
     height:58px;
     background-image: url('header.svg') ; 
@@ -25,46 +23,49 @@ header {
 	display: flex;
     position: absolute;
     top:15%;
-    gap:16px;
 	flex-wrap: nowrap;
-    max-width: 90%;
+    max-width: 100%;
     column-gap: 50px;
 	min-height: 2200px;
-	justify-content: space-evenly;
+	justify-content: space-between;
     align-items: stretch;
 
 }
 
 .logos {
-    width: 260px;
+    max-width: 260px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    width: 50%;
 }
 li,a {
     color: white;
     text-decoration: none;
-}
-.logo {
-    position: relative;
-    float:right;
 }
 .logo,.menu {
     cursor: pointer;
 }
 .nav_links {
     list-style: none;
+    display: flex;
+    gap: 20px;
+  
 }
 .nav_links li {
     display: inline-block;
-    padding: 0 20px;
+    padding-right: 20px;
 }
 .search {
     position: relative;
-    right:50px;
-    
+    right:25px;
 }
 input[type=text]{
-    border-radius: 10px;
-    width:306px;
-    height:40px;
+    right:0;
+    border-radius: 15px;
+    max-width: 240px;
+    width: 100%;
+    height:35px;
     padding:0 30px;
 }
 
@@ -87,13 +88,12 @@ main {
     position: relative;
     background-image: url('nigga.svg');
     width: 100%;
-    max-width: 856px;
-   
+    max-width: 950px;
     height: 480px;
     margin-bottom: 20px; 
 }
 .box {
-    display: inline-block;
+    display: none;
     position: relative;
     background-color:#55AE3A ;
     max-width: 162px;
@@ -101,7 +101,6 @@ main {
     height:32px;
     transform: skew(-30deg);
     text-align: center;
-    
 }
 .box p {
     display: block;
@@ -182,7 +181,9 @@ main {
     width: 48%;
     height: 233px;
     margin: 0 1%;
-   
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .box1 {
     position: absolute;
@@ -362,88 +363,7 @@ h1 {
 
 
 
-aside {
-	flex-basis: 25vw;
-	order: 2
-}
-aside ul {
-	list-style: none;
-	margin: 0;
-	padding: 0
-}
-aside a {
-	display: block;
-	color: #006633;
-	font-size: 20px;
-	text-decoration: none;
-	line-height: 15px;
-    font-weight: bold;
-    
-}
-aside a:hover {
-	text-decoration: underline
-}
-aside li {
-	padding: 15px 0;
-}
-.rec {
-    margin-top: 30px;
-    
-}
-.card4 {
-    display: inline-block;
-    margin-top:25px;
-    width: 100%;
-    max-width: 416px;
-    height:86px;
-    
-}
-.photocard4 {
-    float: left;
-    gap:30px;
-    display: inline-block;
-    margin: 0%;
-    position: relative;
-    background-image: url('k.svg');
-    width: 100%;
-    max-width: 86px;
-    height:86px;
-    
-}
-.boxcard4 {
-    display: inline-block;
-    position: relative;
-    background-color:#55AE3A ;
-    width: 100%;
-    max-width: 162px;
-    height:32px;
-    transform: skew(-30deg);
-    text-align: center;
-    margin: 0;
-    top:0%;
-    left:7%;
-}
-.boxcard4 p {
-    display: block;
-    position: relative;
-    color: white;
-    transform: skew(30deg);
-    top:25%;
-    margin: 0%;
-}
-h4 {
-    margin: 5px 0 0 20px;
-    float: center;
-    width: 100%;
-    max-width: 306px;
-    height:51px;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-}
+
 
 @media (max-width:1466px){
     h1 {
@@ -474,8 +394,30 @@ h4 {
         line-height: 34px;
         
     }
+    input[type=text]{
+        max-width: 180px;
+        
+    }
+  
+    nav{
+        font-size: 15px;
+    }
    
 }
+@media (max-width:870px){
+nav{
+    display: none;
+}   
+.search{
+    display: none;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure the logos take up the full width of the .navbar */
+    margin: 0 auto;
+}
+ }
 @media (max-width:775px){
    .photo1{
     height: 100%;
@@ -487,9 +429,7 @@ h4 {
         line-height: 32px;
         
     }
-   .aside {
-    display:none;
-   }
+
   
 }
 @media (max-width: 675px){
@@ -499,5 +439,12 @@ h4 {
     }
    .aside {
     display:none;
+   }
+}
+@media (max-width: 580px){
+   header{
+    background-image: url('header-background-phone.png') ; 
+    height: auto;
+    width: 100%;
    }
 }
