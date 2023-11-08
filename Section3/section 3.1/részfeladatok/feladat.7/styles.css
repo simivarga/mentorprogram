@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: table;
+    width: 100%;
+  }
+  
+  .container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .centered-main {
+    width: 1500px;
+    height: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey; /* Set your desired background color */
+    text-align: center; /* Center text inside main element if needed */
+  }
+  .navbar {
+    width: 1450px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#006633;
+
+    ;
+    text-align: center; /* Center text inside navbar if needed */
+  }
+  .box{
+    max-width: 328px;
+    width: 100%;
+    height: 45px;
+    display: inline-block;
+    color:#006633;
+    background-color: white;
+    transform: skew(-30deg);
+    margin: 0px; /* Adjust margin as needed */
+    font-size: 34px;
+    padding-top: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .box:first-child, .box:last-child{
+    max-width: 324px;
+    width: 100%;
+    height: 45px;
+    color: white;
+    display: inline-block;
+    background-color: #006633;
+    margin:0px; /* Adjust margin as needed */
+    font-size: 34px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .text{
+    transform: skew(30deg);
+  }
+  .box:first-child:hover, .box:last-child:hover{
+    background-color:#55AE3A ;
+    transition: 0.3s;
+  }
