@@ -24,9 +24,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color:#006633;
-
-    ;
-    text-align: center; /* Center text inside navbar if needed */
   }
   .box{
     max-width: 328px;
@@ -36,7 +33,7 @@ body {
     color:#006633;
     background-color: white;
     transform: skew(-30deg);
-    margin: 0px; /* Adjust margin as needed */
+    margin: 0px; 
     font-size: 34px;
     padding-top: 5px;
     font-weight: bold;
@@ -49,7 +46,7 @@ body {
     color: white;
     display: inline-block;
     background-color: #006633;
-    margin:0px; /* Adjust margin as needed */
+    margin:0px; 
     font-size: 34px;
     font-weight: bold;
     transition: 0.3s;
@@ -61,3 +58,58 @@ body {
     background-color:#55AE3A ;
     transition: 0.3s;
   }
+  .box:first-child:active, .box:last-child:active{
+    background-color:grey ;
+    transition: 0.3s;
+  }
+  .main-pic{
+    width: 100%;
+    height: 400px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: aqua;
+  }
+  .pic {
+    max-width: 272px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.text_box {
+   height:100px;
+    position: absolute;
+    font-size: 23px;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}
+.overlay-box {
+  position: absolute;
+  top: 63%;
+  left: 20px;
+  width: 133px;
+  height: 30px;
+  background-color:#55AE3A;
+  transform: skew(-30deg);
+}
+.text_smallbox{
+  font-size: 25px;
+  transform: skew(30deg);
+  color:white;
+  padding-left:15px;
+}
