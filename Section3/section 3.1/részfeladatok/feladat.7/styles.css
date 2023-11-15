@@ -11,11 +11,11 @@ body {
   }
   
   .centered-main {
-    width: 1500px;
+    width: 1450px;
     height: 510px;
     margin-left: auto;
     margin-right: auto;
-    background-color: grey; /* Set your desired background color */
+    background-color: white; /* Set your desired background color */
     text-align: center; /* Center text inside main element if needed */
   }
   .navbar {
@@ -91,6 +91,7 @@ body {
     font-weight: bold;
     bottom: 0;
     left: 0;
+    padding:10px;
     width: 100%;
     padding: 8px;
     color: white;
@@ -108,8 +109,9 @@ body {
   transform: skew(-30deg);
 }
 .text_smallbox{
-  font-size: 25px;
+  font-size: 24px;
   transform: skew(30deg);
   color:white;
   padding-left:15px;
+  font-weight: bold;
 }
